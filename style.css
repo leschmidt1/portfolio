@@ -1,16 +1,36 @@
-
 /* Styles généraux */
 body {
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    background-color: #1e1e2f;
+    background: #0a0a0a; 
     color: #e0e0e0;
+    animation: backgroundAnimation 10s ease-in-out infinite; 
 }
 
+/* Animation de changement de fond */
+@keyframes backgroundAnimation {
+    0% {
+        background: #0a0a0a;
+    }
+    25% {
+        background: #111; 
+    }
+    50% {
+        background: #1a1a1a; 
+    }
+    75% {
+        background: #222; 
+    }
+    100% {
+        background: #0a0a0a; 
+    }
+}
+
+/* Header */
 header {
-    background: #28293e;
+    background: #000000;
     color: #fff;
     padding: 1.5rem 0;
     text-align: center;
@@ -26,11 +46,11 @@ header p {
     font-size: 1.2rem;
 }
 
+/* Grille des sections */
 main {
     padding: 2rem;
 }
 
-/* Styles des sections */
 section {
     margin-bottom: 2rem;
     padding: 1.5rem;
@@ -65,7 +85,7 @@ section h2 {
     color: #e63946;
 }
 
-/* Liens et pied de page */
+/* Pied de page */
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -74,12 +94,13 @@ footer {
     margin-top: 2rem;
 }
 
-
 /* Styles pour la section "À propos" */
 .about-container {
     display: flex;
     align-items: center;
     gap: 1rem;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
 }
 
 .photo-profil {
@@ -88,6 +109,16 @@ footer {
     border-radius: 50%;
     border: 3px solid #e63946;
     object-fit: cover;
+}
+
+/* Animation d'apparition */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /* Ajustement pour mobile */
@@ -101,7 +132,6 @@ footer {
         margin-bottom: 1rem;
     }
 }
-
 
 /* Section Contact */
 #contact {
@@ -139,8 +169,8 @@ footer {
 }
 
 .contact-form button {
-    padding: 0.7rem;
-    font-size: 1rem;
+    padding: 0.6rem;
+    font-size: 0.9rem; /* Taille de la police réduite */
     font-weight: bold;
     color: #fff;
     background: #e63946;
@@ -152,4 +182,71 @@ footer {
 
 .contact-form button:hover {
     background: #c72e3c;
+}
+
+/* Styles pour les boutons de menu et de projet */
+.menu ul,
+#projets ul {
+    list-style-type: none;  
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+    gap: 1rem;
+}
+
+.menu ul li button,
+#projets ul li button {
+    padding: 0.6rem 1.2rem; /* Padding réduit */
+    font-size: 0.9rem; /* Taille de la police réduite */
+    font-weight: bold;
+    color: #fff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.menu ul li button:hover,
+#projets ul li button:hover {
+    background: #c72e3c;
+    transform: scale(1.1);
+}
+
+/* Styles pour les boutons de filtre */
+.filter-button {
+    padding: 0.6rem 1.2rem; /* Padding réduit */
+    font-size: 0.9rem; /* Taille de la police réduite */
+    font-weight: bold;
+    color: #fff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.filter-button:hover {
+    background: #c72e3c;
+    transform: scale(1.1);
+}
+
+/* Masquage et affichage des projets selon le filtre */
+.project {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.filter-buttons {
+    margin-bottom: 20px;
+}
+
+.filter-buttons button {
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
 }

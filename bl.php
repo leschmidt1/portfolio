@@ -1,3 +1,8 @@
+<?php
+require_once(__DIR__ . '/mysql.php');
+require_once(__DIR__ . '/databaseconnect.php');
+require_once(__DIR__ . '/variables.php');
+?>
 
 <!DOCTYPE HTML>
 <html>
@@ -15,7 +20,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Collaboration avec l’équipe backend pour intégrer des API et afficher les données dynamiquemen.<li>Janvier 2014 – Décembre 2016</li></h1>
+						<h1><?php echo $projet[1]['titre'];?> et afficher les données dynamiquement.<li>Janvier 2014 – Décembre 2016</li></h1>
 						<span class="logo"><img src="images/pentest.png" alt="" /></span>
 					</header>
 

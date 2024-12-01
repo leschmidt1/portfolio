@@ -1,3 +1,11 @@
+<?php
+require_once(__DIR__ . '/config/mysql.php');
+require_once(__DIR__ . '/databaseconnect.php');
+require_once(__DIR__ . '/variables.php');
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -88,18 +96,18 @@
     <h2>Projets</h2>
     <nav class="menu">
         <div id="filter-buttons" class="filters">
-            <button class="filter-button" data-filter="html">Développement</button>
-            <button class="filter-button" data-filter="css">Gestions de Projets</button>
-            <button class="filter-button" data-filter="java">JavaScript</button>
+            <button class="filter-button" data-filter="html"><?php echo $projet[0]['category'];?></button>
+            <button class="filter-button" data-filter="css"><?php echo $projet[2]['category'];?></button>
+            <button class="filter-button" data-filter="java"><?php echo $projet[1]['category'];?></button>
             <button class="filter-button" data-filter="tout">Tout afficher</button>
         </div>
     </nav>
     <ul>
-        <li class="html"><button onclick="location.href='generic.html'" target="_blank">Projet 1</button></li>
-        <li class="css"><button onclick="location.href='bl.html'" target="_blank">Projet 2</button></li>
-        <li class="java"><button onclick="location.href='dfs.html'" target="_blank">Projet 3</button></li>
-        <li class="css"><button onclick="location.href='fg.html'" target="_blank">Projet 4</button></li>
-        <li class="html"><button onclick="location.href='fh.html'" target="_blank">Projet 5</button></li>
+        <li class="html"><button onclick="location.href='<?php echo $projet[0]['link'];?>'" target="_blank">Projet 1</button></li>
+        <li class="css"><button onclick="location.href='<?php echo $projet[1]['link'];?>'" target="_blank">Projet 2</button></li>
+        <li class="java"><button onclick="location.href='<?php echo $projet[2]['link'];?>'" target="_blank">Projet 3</button></li>
+        <li class="css"><button onclick="location.href='<?php echo $projet[3]['link'];?>'" target="_blank">Projet 4</button></li>
+        <li class="html"><button onclick="location.href='<?php echo $projet[4]['link'];?>'" target="_blank">Projet 5</button></li>
     </ul>
 </section>
 
@@ -154,5 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+
 </body>
 </html>

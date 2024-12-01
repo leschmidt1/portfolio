@@ -1,3 +1,8 @@
+<?php
+require_once(__DIR__ . '/mysql.php');
+require_once(__DIR__ . '/databaseconnect.php');
+require_once(__DIR__ . '/variables.php');
+?>
 
 <!DOCTYPE HTML>
 <html>
@@ -15,7 +20,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Application de gestion de la santé et du bien-être (Suivi de la forme physique et des habitudes)</h1>
+						<h1><?php echo $projet[4]['titre'];?> (Suivi de la forme physique et des habitudes)</h1>
 						<span class="logo"><img src="images/pentest.png" alt="" /></span>
 					</header>
 

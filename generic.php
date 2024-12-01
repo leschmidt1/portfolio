@@ -1,3 +1,9 @@
+<?php
+// Inclut les fichiers nécessaires avec des chemins relatifs vérifiés
+require_once(__DIR__ . '/mysql.php'); // Vérifiez que ce fichier existe
+require_once(__DIR__ . '/databaseconnect.php'); // Assurez-vous que ce fichier initialise correctement $mysqlClient
+require_once(__DIR__ . '/variables.php'); // Assurez-vous que le chemin est correct
+?>
 
 <!DOCTYPE HTML>
 <html>
@@ -15,7 +21,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Développement de pages web responsives en utilisant HTML5, CSS3, JavaScript et jQuery.<li>Janvier 2019 – Décembre 2023</li></h1>
+						<h1><?php echo $projet[0]['titre'];?>en utilisant HTML5, CSS3, JavaScript et jQuery.</li><li>Janvier 2019 – Décembre 2023</li</h1>
 						<span class="logo"><img src="images/pentest.png" alt="" /></span>
 					</header>
 

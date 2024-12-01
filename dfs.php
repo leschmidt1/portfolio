@@ -1,3 +1,9 @@
+<?php
+require_once(__DIR__ . '/mysql.php');
+require_once(__DIR__ . '/databaseconnect.php');
+require_once(__DIR__ . '/variables.php');
+?>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -14,7 +20,7 @@
 
 				<!-- Header -->
 					<header id="header">
-						<h1>Plateforme de gestion de projets pour une agence marketing (2023)</li></h1>
+						<h1><?php echo $projet[2]['titre'];?> (2023)</li></h1>
 						<span class="logo"><img src="images/pentest.png" alt="" /></span>
 					</header>
 

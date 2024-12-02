@@ -5,10 +5,10 @@ USE `projet_filtre`;
 -- Table Creation
 CREATE TABLE IF NOT EXISTS 'projet' (
     projetid INT PRIMARY KEY,  
-    titre VARCHAR(20) NOT NULL,
-    description VARCHAR(30),
-    category VARCHAR(25),
-    link VARCHAR(25)  
+    titre VARCHAR(100) NOT NULL,
+    description VARCHAR(350),
+    category VARCHAR(250),
+    link VARCHAR(250)  
 );
 
 INSERT INTO projet (`id`, `titre`, `description`, `categorie`, `lien`) 

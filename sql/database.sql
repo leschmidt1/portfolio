@@ -20,3 +20,19 @@ VALUES
     ('Plateforme de gestion de projets pour une agence marketing', 'En 2023, j’ai participé à la création d’une plateforme de gestion de projets pour une agence marketing.', 'JavaScript', 'dfs.php'),
     ('Plateforme de gestion de projets collaboratifs', 'En tant que développeur de pages web responsives, mon rôle était de créer des sites web qui offrent une expérience fluide et agréable.', 'Gestions de Projets', 'fg.php'),
     ('Application de gestion de la santé et du bien-être', 'Objectif : Créer une application pour suivre la santé physique et mentale.', 'Développement', 'fh.php');
+
+
+-- Créer la base de données si elle n'existe pas déjà
+CREATE DATABASE IF NOT EXISTS `user_login`;
+USE `user_login`;
+
+CREATE TABLE IF NOT EXISTS `users` (
+    `id` INT AUTO_INCREMENT,
+    `username` VARCHAR(50) NOT NULL UNIQUE,
+    `email` VARCHAR(100) NOT NULL UNIQUE,
+    `password` VARCHAR(255) NOT NULL,
+    PRIMARY KEY (`id`) 
+);
+
+
+TRUNCATE TABLE `users`;

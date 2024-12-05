@@ -1,8 +1,13 @@
 <?php
-require_once(__DIR__ . '/mysql.php');
+require_once(__DIR__ . '/config/mysql.php');
 require_once(__DIR__ . '/databaseconnect.php');
 require_once(__DIR__ . '/variables.php');
 ?>
+
+<?php
+require 'auth.php'; // Vérifie si l'utilisateur est connecté
+?>
+
 
 <!DOCTYPE HTML>
 <html>

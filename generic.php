@@ -1,8 +1,11 @@
 <?php
-// Inclut les fichiers nécessaires avec des chemins relatifs vérifiés
-require_once(__DIR__ . '/mysql.php'); // Vérifiez que ce fichier existe
-require_once(__DIR__ . '/databaseconnect.php'); // Assurez-vous que ce fichier initialise correctement $mysqlClient
-require_once(__DIR__ . '/variables.php'); // Assurez-vous que le chemin est correct
+require_once(__DIR__ . '/config/mysql.php');
+require_once(__DIR__ . '/databaseconnect.php');
+require_once(__DIR__ . '/variables.php');
+?>
+
+<?php
+require 'auth.php'; // Vérifie si l'utilisateur est connecté
 ?>
 
 <!DOCTYPE HTML>

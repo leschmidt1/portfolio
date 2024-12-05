@@ -170,7 +170,7 @@ footer {
 
 .contact-form button {
     padding: 0.6rem;
-    font-size: 0.9rem; /* Taille de la police réduite */
+    font-size: 0.9rem; 
     font-weight: bold;
     color: #fff;
     background: #e63946;
@@ -188,7 +188,7 @@ footer {
 .menu ul,
 #projets ul {
     list-style-type: none;  
-    margin: 0;
+    margin: 9;
     padding: 0;
     display: flex; 
     justify-content: center; 
@@ -197,8 +197,8 @@ footer {
 
 .menu ul li button,
 #projets ul li button {
-    padding: 0.6rem 1.2rem; /* Padding réduit */
-    font-size: 0.9rem; /* Taille de la police réduite */
+    padding: 0.6rem 1.2rem; 
+    font-size: 0.9rem; 
     font-weight: bold;
     color: #fff;
     background: #e63946;
@@ -216,8 +216,8 @@ footer {
 
 /* Styles pour les boutons de filtre */
 .filter-button {
-    padding: 0.6rem 1.2rem; /* Padding réduit */
-    font-size: 0.9rem; /* Taille de la police réduite */
+    padding: 0.4rem 1.2rem; 
+    font-size: 0.9rem; 
     font-weight: bold;
     color: #fff;
     background: #e63946;
@@ -242,11 +242,461 @@ footer {
 }
 
 .filter-buttons {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .filter-buttons button {
     margin-right: 10px;
     padding: 10px;
     cursor: pointer;
+}
+
+/* Style du bouton de login */
+.btn-login {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #fff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background 0.3s ease;
+}
+
+
+.btn-login:hover {
+    background: #c72e3c;
+    transform: scale(1.1); 
+}
+
+
+.btn-login:hover {
+    background: #c72e3c;
+    transform: scale(1.1); 
+}
+
+/* Formulaire de Connexion */
+#login-section {
+    background: #2b2c40; /* Couleur de fond du formulaire */
+    padding: 2rem; /* Marges internes égales */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre */
+    width: 100%; /* Largeur par défaut */
+    max-width: 400px; /* Largeur maximale fixe */
+    margin: 0 auto; /* Centrer horizontalement */
+    position: absolute; /* Position absolue pour centrage */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste pour un parfait centrage */
+    box-sizing: border-box; /* Inclut le padding dans la largeur totale */
+}
+
+/* Titre du formulaire */
+#login-section h2 {
+    color: #e63946; /* Couleur du titre */
+    margin-bottom: 1.5rem; /* Espace sous le titre */
+    font-size: 1.8rem; /* Taille de la police */
+    border-bottom: 2px solid #e63946; /* Ligne décorative */
+    padding-bottom: 0.5rem; /* Espacement sous le titre */
+    text-align: center; /* Centrage du texte */
+}
+
+/* Groupes d'entrées */
+.input-group {
+    margin-bottom: 1.5rem; /* Espacement entre les champs */
+}
+
+.input-group label {
+    font-weight: bold; /* Texte en gras */
+    color: #e0e0e0; /* Couleur du texte */
+    display: block; /* Affiche le label sur une nouvelle ligne */
+    margin-bottom: 0.5rem; /* Espace entre le label et le champ */
+}
+
+.input-group input {
+    width: 100%; /* Champ prend toute la largeur disponible */
+    padding: 0.8rem; /* Marges internes */
+    font-size: 1rem; /* Taille de la police */
+    border: 1px solid #444; /* Bordure sombre */
+    border-radius: 5px; /* Coins arrondis */
+    background: #1e1e2f; /* Couleur de fond */
+    color: #e0e0e0; /* Couleur du texte */
+    box-sizing: border-box; /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+/* Styles du bouton de connexion */
+.btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #e63946;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: #c72e3c;
+    transform: scale(1.1); 
+}
+
+/* Lien Mot de passe oublié */
+.forgot-password {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.forgot-password a {
+    color: #e63946;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Style pour le lien de création de compte */
+.create-account {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.create-account a {
+    color: #e63946;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.create-account a:hover {
+    text-decoration: underline;
+}
+
+/* Formulaire de Création de Compte */
+#signup-form {
+    background: #2b2c40; /* Fond sombre du formulaire */
+    padding: 2rem; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Ombre */
+    width: 100%; /* Prend toute la largeur */
+    max-width: 400px; /* Largeur maximale */
+    margin: 0 auto; /* Centrage horizontal */
+    position: absolute; /* Position absolue pour centrer le formulaire */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste la position pour un centrage parfait */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+/* Titre du formulaire */
+#signup-form h2 {
+    color: #e63946; /* Couleur du titre */
+    margin-bottom: 1.5rem; /* Espacement sous le titre */
+    font-size: 1.8rem; /* Taille de la police */
+    border-bottom: 2px solid #e63946; /* Ligne décorative sous le titre */
+    padding-bottom: 0.5rem; /* Espace sous le titre */
+    text-align: center; /* Centre le texte */
+}
+
+/* Groupes d'entrées */
+#signup-form .input-group {
+    margin-bottom: 1.5rem; /* Espacement entre les champs */
+}
+
+#signup-form .input-group label {
+    font-weight: bold; /* Met le label en gras */
+    color: #e0e0e0; /* Couleur du texte */
+    display: block; /* Affiche le label sur une nouvelle ligne */
+    margin-bottom: 0.5rem; /* Ajoute un espace entre le label et le champ */
+}
+
+#signup-form .input-group input {
+    width: 100%; /* Prend toute la largeur disponible */
+    padding: 0.8rem; /* Marges internes */
+    font-size: 1rem; /* Taille de police */
+    border: 1px solid #444; /* Bordure sombre */
+    border-radius: 5px; /* Coins arrondis */
+    background: #1e1e2f; /* Couleur de fond */
+    color: #e0e0e0; /* Couleur du texte */
+    box-sizing: border-box; /* Inclut le padding dans la largeur */
+}
+
+/* Bouton de Création de Compte */
+#signup-form button {
+    padding: 0.8rem 1.2rem; /* Marges internes */
+    font-size: 1rem; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    color: #fff; /* Texte blanc */
+    background: #e63946; /* Couleur rouge */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur au survol */
+    width: 100%; /* Prend toute la largeur disponible */
+    transition: background 0.3s ease, transform 0.2s ease; /* Animation */
+}
+
+#signup-form button:hover {
+    background: #c72e3c; /* Change la couleur au survol */
+    transform: scale(1.05); /* Zoom léger */
+}
+
+/* Bouton Retour à l'accueil */
+#signup-form .back-button {
+    margin-top: 1.5rem; /* Espacement au-dessus du bouton */
+    display: block; /* Affiche le bouton sur une nouvelle ligne */
+    text-align: center; /* Centre le texte */
+    color: #fff; /* Texte blanc */
+    background: #e63946; /* Fond rouge */
+    padding: 0.8rem 1rem; /* Marges internes */
+    border-radius: 5px; /* Coins arrondis */
+    text-decoration: none; /* Supprime le soulignement */
+    font-weight: bold; /* Texte en gras */
+    transition: background 0.3s ease; /* Animation de transition */
+}
+
+#signup-form .back-button:hover {
+    background: #c72e3c; /* Change la couleur au survol */
+}
+
+/* Responsivité pour les petits écrans */
+@media (max-width: 768px) {
+    #signup-form {
+        padding: 1.5rem; /* Réduit les marges internes */
+        width: 90%; /* Formulaire prend 90% de la largeur de l'écran */
+    }
+}
+
+#login-form, #signup-form {
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Styles généraux pour le menu */
+.nav-button {
+    display: flex;
+    justify-content: space-between; /* Espace entre les sections du menu */
+    align-items: center; /* Aligne verticalement les éléments */
+    background: #333; /* Couleur de fond */
+    padding: 15px 20px; /* Espacement interne */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Ombre */
+}
+
+/* Boutons de navigation */
+.nav-button {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 10px 20px; /* Espacement interne des boutons */
+    margin: 0 10px; /* Espacement entre les boutons */
+    font-size: 1rem; /* Taille de police */
+    font-weight: bold; /* Texte en gras */
+    border: 2px solid transparent; /* Bordure initialement invisible */
+    border-radius: 5px; /* Coins arrondis */
+    background: #444; /* Couleur de fond des boutons */
+    transition: all 0.3s ease; /* Transition fluide pour les animations */
+}
+
+/* Effet au survol */
+nav a:hover {
+    background: #e63946; /* Change la couleur de fond */
+    color: white; /* Texte reste blanc */
+    border: 2px solid #e63946; /* Ajoute une bordure rouge */
+    transform: scale(1.1); /* Zoom léger */
+}
+
+/* Texte de bienvenue */
+nav .welcome {
+    display: flex; /* Organisation des éléments horizontalement */
+    align-items: center; /* Aligne verticalement les éléments */
+    color: #fff; /* Couleur du texte */
+    font-size: 1rem; /* Taille de la police */
+    gap: 10px; /* Espacement entre les éléments */
+}
+
+/* Bouton de déconnexion */
+.logout {
+    color: #e63946; /* Texte rouge */
+    text-decoration: none; /* Supprime le soulignement */
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transition fluide pour la couleur */
+}
+
+.logout:hover {
+    color: #c72e3c; /* Rouge plus sombre au survol */
+}
+
+/* Suppression des points devant les éléments (au cas où) */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Organisation horizontale des éléments */
+    gap: 15px; /* Espacement entre les boutons */
+}
+
+/* Styles pour l'onglet utilisateur */
+nav .user-info {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .user-info span {
+    display: block;
+    font-size: 14px;
+    color: #333;
+}
+
+nav .user-info a.logout {
+    display: inline-block;
+    margin-top: 5px;
+    color: #e74c3c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav .user-info a.logout:hover {
+    text-decoration: underline;
+}
+
+/* Positionner le menu de navigation correctement */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Styles pour le header */
+header {
+    text-align: center; /* Centre les textes */
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Style pour le bouton de profil */
+.profile-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.profile-button {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Styles pour le header */
+header {
+    text-align: center; /* Centre les textes */
+    padding: 20px;
+    position: relative;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Style pour le bouton de profil */
+.profile-button-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.profile-button {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+/* Style pour le menu déroulant */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: black; /* Fond noir pour le menu déroulant */
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-dropdown ul li {
+    padding: 10px;
+}
+
+.menu-dropdown ul li a {
+    text-decoration: none;
+    color: white; /* Texte en blanc */
+}
+
+.menu-dropdown ul li:hover {
+    background-color: #333; /* Fond foncé lors du survol */
+}
+
+/* Menu de navigation centré */
+nav {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #f1f1f1;
 }
